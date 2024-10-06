@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="graphArea" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #cccccc;">
+         <children>
+            <Text layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AAA">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" layoutX="277.0" layoutY="132.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="21.0" prefWidth="41.0" spacing="10.0" style="-fx-background-color: #57e35c;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notes" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="99999" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="132.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="21.0" prefWidth="41.0" spacing="10.0" style="-fx-background-color: #cc5555;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SP" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ANOTHER" />
+                  <Text layoutX="12.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="99" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Song Title" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TableView fx:id="playStats" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="300.0">
+        <columns>
+          <TableColumn prefWidth="75.0" />
+          <TableColumn prefWidth="75.0" text="Prev" />
+            <TableColumn prefWidth="75.0" text="New" />
+            <TableColumn prefWidth="75.0" text="Delta" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="playStats1" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="JudgeType" />
+                        <TableColumn prefWidth="75.0" text="Quantity" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="playStats11" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="AccType" />
+                        <TableColumn prefWidth="75.0" text="Quantity" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DJ NONAME" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</VBox>
